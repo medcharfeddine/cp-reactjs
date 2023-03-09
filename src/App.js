@@ -8,9 +8,9 @@ import Col from "react-bootstrap/Col";
 import Img from "./image/form.png";
 
 function App() {
-  const [val, setVal] = useState("");
-  const [ccv, setCcv] = useState("");
-  const [zip, setZip] = useState("");
+  const [val, setVal] = useState();
+  const [ccv, setCcv] = useState();
+  const [zip, setZip] = useState();
   
 
   return (
@@ -31,7 +31,7 @@ function App() {
               pattern="[0-9]*"
               value={val}
               onChange={(e) =>
-                setVal((v) => (e.target.validity.valid ? e.target.value : v))
+                setVal((v) => (e.target.value))
               }
               maxLength={16}
               placeholder="xxxx xxxx xxxx xxxx"
@@ -55,7 +55,7 @@ function App() {
               pattern="[0-9]*"
               value={ccv}
               onChange={(e) =>
-                setCcv((v) => (e.target.validity.valid ? e.target.value : v))
+                setCcv((v) => (e.target.value))
               }
               maxLength={3}
               placeholder="123"
@@ -69,7 +69,7 @@ function App() {
               pattern="[0-9]*"
               value={zip}
               onChange={(e) =>
-                setZip((v) => (e.target.validity.valid ? e.target.value : v))
+                setZip((v) => (e.target.value))
               }
               maxLength="4"
               placeholder="1234"
