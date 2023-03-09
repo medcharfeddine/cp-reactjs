@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  margin: 0;
+  padding: 0;
+  background-color: #288fb4;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  height: 100vh;
+  padding: 38px;
+  margin-left: 469px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+  width: 360px;
+  height: 596px;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 375px;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 104px;
+  height: 65px;
+  margin-left: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pay {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+input[type="month"] {
+  font-size: 16px;
 }
